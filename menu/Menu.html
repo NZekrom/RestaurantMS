@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MENU
+        </title>
+    </head>
+    <body>
+
+        <div>
+            <div style="color:rgb(77, 223, 44) ;width:25%;float:left; background-image: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'); background-size: 100% 100%;" >
+                <pre>       SOFT DRINK : 20.00 RS  <button class="b" onclick="a1(20)">ADD</button></pre>
+                <pre>       TEA : 20.00 RS         <button class="b" onclick="a2(20)">ADD</button></pre>
+                <pre>       COFFEE : 40.00 RS      <button class="b" onclick="a3(40)">ADD</button></pre>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+
+            <div style="color:rgb(39, 53, 179) ;Width:25%;float:right; background-image: url('https://i0.wp.com/vegehomecooking.com/wp-content/uploads/2020/11/TomatoSoup12.jpg?resize=720%2C1282&ssl=1'); background-size: 100% 100%;">
+                <br><br><br><br>
+                <pre>        TOMATO SOUP : 80.00 RS       <button class="b" onclick="a4(80)">ADD</button></pre>
+                <pre>        HOT & SOUR SOUP : 120.00 RS  <button class="b" onclick="a5(120)">ADD</button></pre>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+
+
+            <div style="color:rgb(184, 3, 3) ;Width:25%;float:right; background-image: url('https://images.unsplash.com/photo-1606149059549-6042addafc5a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJ1cmdlciUyMGZyaWVzfGVufDB8fDB8fA%3D%3D&w=1000&q=80'); background-size: 100% 100%;">
+                <pre>       ONION RINGS : 50.00 RS    <button class="b" onclick="a6(50)">ADD</button></pre>
+                <pre>       CHILLI POTATO : 70.00 RS  <button class="b" onclick="a7(70)">ADD</button></pre>
+                <pre>       CHEESE NUGGET : 70.00 RS  <button class="b" onclick="a8(70)">ADD</button></pre>
+                <pre>       PASTA : 75.00 RS          <button class="b" onclick="a9(75)">ADD</button></pre>
+                <pre>       SPRING ROLL : 95.00 RS    <button class="b" onclick="a10(95)">ADD</button></pre>
+                <pre>       PIZZA : 110.00 RS         <button class="b" onclick="a11(110)">ADD</button></pre>
+                <pre> 
+
+                </pre>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+
+            <div style="color:rgb(34, 75, 210) ;Width:25%;float:right; background-image: url('https://www.shugarysweets.com/wp-content/uploads/2022/03/coffee-cake-donuts-24-scaled.jpg'); background-size: 100% 100%;">
+                <br><br><br><br><br><br><br>
+                <pre>           DONUT : 80.00 RS     <button class="b" onclick="a12(80)">ADD</button></pre>
+                <pre>           CUP CAKE : 90.00 RS  <button class="b" onclick="a13(90)">ADD</button></pre>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+        
+        <button onclick="cancel()" style="position:absolute; top:76.7%; left:55%; ">CANCEL ORDER</button>
+        <p id="k" style="position:absolute; top:75%; left:35%;"></p>          
+        <form method="POST" action="http://localhost/Restaurant/menu/c_information.php" >
+            
+            <pre style="position:absolute; top:83%; left:20%;">NAME :</pre><input type="text" name="s_nme" style='width:15%;position:absolute; top:84.4%; left:23%;' required>
+            <pre style="position:absolute; top:83%; left:60%;">PHONE NUMBER :</pre><input type="text" name="s_noe" style='width:15%;position:absolute; top:84.4%; left:67%;' required>
+            <input type="hidden" name="s_bill" id="bill">
+            <input type="submit" value="PAYMENT" style="position:absolute; top:90%; left:44%; width: 12%; height: 6%;">
+        </form>
+
+        <script>
+            
+            var k;
+            if(k==null){k=0;}
+            function a1(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a2(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a3(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a4(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a5(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a6(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a7(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a8(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a9(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a10(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a11(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a12(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function a13(z){
+                k=k+z;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            function cancel(){
+                k=0;
+                document.getElementById("k").innerHTML = "YOUR TOTAL BILL IS : RS "+k+".00";
+                document.getElementById("bill").value=(k);
+            }
+            
+            document.getElementById("k").innerHTML="YOUR TOTAL BILL IS : RS "+k+".00";
+            document.getElementById("bill").value=(k);
+        </script>
+        <style>
+            .b{
+                color:rgb(70, 197, 240);                      
+                background-color: transparent;
+                border: none;
+            }
+        </style>
+    </body>
+</html>
